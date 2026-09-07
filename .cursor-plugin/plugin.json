@@ -1,0 +1,26 @@
+{
+  "name": "gojiberry",
+  "displayName": "Gojiberry AI",
+  "version": "1.0.0",
+  "description": "Connect Cursor to your Gojiberry workspace. Search and update contacts, manage lists and campaigns, refine lead-finding agents, and read Unibox conversations through the hosted MCP at mcp.gojiberry.ai.",
+  "author": {
+    "name": "GojiberryAI",
+    "email": "hello@gojiberry.ai"
+  },
+  "homepage": "https://gojiberry.ai",
+  "repository": "https://github.com/romangojiberryAI/gojiberry-mcp",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "mcp",
+    "sales",
+    "outbound",
+    "linkedin",
+    "leads",
+    "crm",
+    "gtm",
+    "prospecting",
+    "pipeline",
+    "gojiberry"
+  ]
+}
