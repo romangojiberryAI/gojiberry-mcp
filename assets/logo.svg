@@ -1,6 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Gojiberry AI">
   <rect width="512" height="512" fill="#000"/>
-  <path fill="#FDC087" d="M25 0h228v159H25z"/>
-  <path fill="#FC8A66" d="M25 160h228L255 510 25 350z"/>
-  <path fill="#F65A5A" d="M253 159l233-92v194L253 509z"/>
+  <image href="https://cdn.phototourl.com/free/2026-09-07-8ebc4b6b-3caa-4817-8135-8faadd81c6c9.png" x="25" y="0" width="462" height="512" preserveAspectRatio="xMidYMid meet"/>
 </svg>
