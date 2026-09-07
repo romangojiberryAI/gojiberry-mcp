@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Gojiberry AI">
+  <rect width="512" height="512" rx="96" fill="#111111"/>
+  <g transform="translate(118 132)">
+    <path d="M0 0h118v118H0z" fill="#F3C7A6"/>
+    <path d="M0 132h118l70 116H70z" fill="#E07A5A"/>
+    <path d="M132 0l146 248-70 116L62 116z" fill="#E85D4C"/>
+  </g>
+</svg>
