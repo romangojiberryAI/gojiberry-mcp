@@ -10,7 +10,7 @@
   "homepage": "https://gojiberry.ai",
   "repository": "https://github.com/romangojiberryAI/gojiberry-mcp",
   "license": "MIT",
-  "logo": "assets/logo.svg",
+  "logo": "assets/logo.png",
   "keywords": [
     "mcp",
     "sales",
@@ -24,3 +24,4 @@
     "gojiberry"
   ]
 }
+
