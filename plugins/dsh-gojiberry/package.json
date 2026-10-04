@@ -1,0 +1,62 @@
+{
+  "name": "dsh-gojiberry",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin that connects the agent to Gojiberry over MCP: search contacts, manage lists and campaigns, inspect lead-finding agents, and read the Unibox.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "gojiberry",
+    "mcp",
+    "leads",
+    "outreach"
+  ],
+  "author": {
+    "name": "Gojiberry AI",
+    "url": "https://gojiberry.ai"
+  },
+  "homepage": "https://github.com/romangojiberryAI/gojiberry-mcp/tree/main/plugins/dsh-gojiberry#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romangojiberryAI/gojiberry-mcp.git",
+    "directory": "plugins/dsh-gojiberry"
+  },
+  "bugs": {
+    "url": "https://github.com/romangojiberryAI/gojiberry-mcp/issues"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

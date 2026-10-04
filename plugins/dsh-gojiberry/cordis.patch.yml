@@ -1,0 +1,34 @@
+# Patch layer contributed by the dsh-gojiberry bundle.
+#
+# Two rows:
+# 1. `gojiberry` — this package. Reads GOJIBERRY_API_KEY, exposes ctx.gojiberry
+#    (url and headers), and registers the gojiberry skill.
+# 2. `gojiberry-mcp` — one @deepseek-ai/dsh-mcp-client instance that connects to
+#    https://mcp.gojiberry.ai/mcp over streamable HTTP and registers the
+#    server's tools as mcp__gojiberry__*.
+#
+# Override the `gojiberry` row in $DSH_HOME/profiles/web/cordis.patch.yml:
+#   apiKeyEnv — env var holding the key (default: GOJIBERRY_API_KEY)
+#   apiKey    — inline key; prefer the env var
+#   baseUrl   — Gojiberry MCP host (default: https://mcp.gojiberry.ai)
+#   skill     — register the workflow skill (default: true)
+- insert:
+    - id: gojiberry
+      name: dsh-gojiberry
+      config:
+        apiKeyEnv: GOJIBERRY_API_KEY
+        baseUrl: https://mcp.gojiberry.ai
+    - id: gojiberry-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      inject: [gojiberry]
+      config:
+        transport: streamable-http
+        serverName: gojiberry
+        url: !!js ctx.gojiberry.url
+        headers: !!js ctx.gojiberry.headers
+        failOnStartupError: false
+        reconnect:
+          enabled: true
+          initialDelayMs: 2000
+          maxDelayMs: 30000
+          maxAttempts: 10
