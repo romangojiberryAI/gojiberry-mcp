@@ -59,6 +59,10 @@ Or use a personal API key from app.gojiberry.ai → Settings → API:
 - Create a list called AI founders linked to my AI outbound campaign.
 - What did I last say to John Smith?
 
+## Use Gojiberry with
+
+[Claude Cowork](https://gojiberry.ai/claude-cowork) · [Muse](https://gojiberry.ai/muse) · [Grok Bot](https://gojiberry.ai/grok-bot) · [ChatGPT](https://gojiberry.ai/chat-gpt) · [Dots](https://gojiberry.ai/dots) · [Gemini](https://gojiberry.ai/gemini) · [Kimi](https://gojiberry.ai/kimi) · [DeepSeek](https://gojiberry.ai/deepseek) · [NanoClaw](https://gojiberry.ai/nanoclaw)
+
 ## License
 
 MIT
