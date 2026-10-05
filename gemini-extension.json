@@ -1,0 +1,22 @@
+{
+  "name": "gojiberry",
+  "version": "1.0.0",
+  "description": "Search contacts, lists, campaigns, lead-finding agents, and the Unibox in your Gojiberry workspace.",
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "API Key",
+      "description": "Gojiberry API key from app.gojiberry.ai → Settings → API.",
+      "envVar": "GOJIBERRY_API_KEY",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "gojiberry": {
+      "httpUrl": "https://mcp.gojiberry.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer $GOJIBERRY_API_KEY"
+      }
+    }
+  }
+}
